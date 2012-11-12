@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="@dimen/PaddingBottom" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle|end" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/INGRESE_ALTURA"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="beginning|middle|end" >
+
+            <NumberPicker
+                android:id="@+id/npMts"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/PaddingBottom" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </NumberPicker>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=", "
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <NumberPicker
+                android:id="@+id/npCms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/PaddingBottom" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="metros"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/INGRESE_PESO"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <NumberPicker
+            android:id="@+id/npPeso"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_weight="0.91" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/PaddingBottom"
+            android:onClick="clicBoton"
+            android:text="Calcular"
+            android:visibility="visible" />
+ 		/>
+    </LinearLayout>
+
+</RelativeLayout>

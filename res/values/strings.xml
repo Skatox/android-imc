@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">PesoPersona</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="ingrese_su_altura">Ingrese su altura</string>
+    <string name="INGRESE_ALTURA">Ingrese su altura</string>
+    <string name="INGRESE_PESO">Ingrese su peso</string>
+
+</resources>
